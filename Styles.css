@@ -1,0 +1,35 @@
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    transition: all 0.5s ease-in-out;
+    animation-name: Panda;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;animation-fill-mode: forwards;
+}
+
+@keyframes Panda {
+    0% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: peru;
+    }
+
+    100% {
+        background-color: rebeccapurple;
+    }
+}
+
+.box:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: cyan;
+}
+
+  
